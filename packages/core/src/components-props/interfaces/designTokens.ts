@@ -1,0 +1,30 @@
+import {
+  AdditionalComponentProps,
+  BackgroundConfigurableComponent,
+  BorderConfigurableComponent,
+  ColorConfigurableComponent,
+  DisplayConfigurableComponent,
+  EffectConfigurableComponent,
+  PositionConfigurableComponent,
+  PresetConfigurableComponent,
+  RadiusConfigurableComponent,
+  SizeConfigurableComponent,
+  SpacingConfigurableComponent,
+  TextConfigurableComponent,
+  TransitionConfigurableComponent,
+} from '.';
+
+export interface DesignTokens
+  extends AdditionalComponentProps,
+    BackgroundConfigurableComponent,
+    BorderConfigurableComponent,
+    DisplayConfigurableComponent,
+    PositionConfigurableComponent,
+    RadiusConfigurableComponent,
+    EffectConfigurableComponent,
+    SizeConfigurableComponent,
+    SpacingConfigurableComponent,
+    TextConfigurableComponent,
+    TransitionConfigurableComponent,
+    ColorConfigurableComponent,
+    PresetConfigurableComponent {}

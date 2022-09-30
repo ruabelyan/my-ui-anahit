@@ -1,0 +1,13 @@
+{
+  "name": "@my-ui/core",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {},
+  "devDependencies": {
+    "csstype": "^3.0.11"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.9.0"
+  }
+}

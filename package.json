@@ -1,0 +1,37 @@
+{
+  "name": "@my-ui/root",
+  "private": true,
+  "scripts": {
+    "postinstall": "husky install",
+    "pre-commit": "yarn format",
+    "pre-push": "yarn lint",
+    "format": "yarn pretty-quick",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "cd": "lerna run --scope @my-ui/react build-storybook"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "16.1.0",
+    "@commitlint/config-conventional": "16.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "husky": "7.0.4",
+    "lerna": "^4.0.0",
+    "pretty-quick": "^3.1.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "lint-staged": {
+    "./src/**/*.{ts,js,jsx,tsx}": [
+      "yarn lint --fix",
+      "yarn format"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}

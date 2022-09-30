@@ -1,0 +1,1 @@
+export type TextSizeType = string;

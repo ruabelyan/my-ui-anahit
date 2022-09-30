@@ -1,0 +1,11 @@
+{
+  "sass-additional-data": "",
+  "alias": {
+    "@": "./src",
+    "@core": "../core/src"
+  },
+  "template": "react-component-library",
+  "stylesInjectType": "lazySingletonStyleTag",
+  "repository": "monorepository",
+  "include": ["../core"]
+}
